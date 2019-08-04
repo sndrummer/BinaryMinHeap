@@ -14,6 +14,13 @@
 #define DBG_NEW new
 #endif
 
+void testHeap()
+{
+	BinaryMinHeap* minHeap = DBG_NEW BinaryMinHeap();
+
+	delete minHeap;
+}
+
 int main(int argc, char* argv[])
 {
 	BinaryMinHeap* minHeap = DBG_NEW BinaryMinHeap();

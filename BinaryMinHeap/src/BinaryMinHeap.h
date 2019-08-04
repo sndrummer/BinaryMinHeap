@@ -17,11 +17,13 @@ public:
 	int getRightChild(int nodeIndex) const;
 	int getParent(int nodeIndex) const;
 
+	int insert(int value); //return it's final index
+
 private:
-	void initHeap(int maxSize);
 	int static const DEFAULT_SIZE = 25;
 	int nodeCount = 0;
-	int maxSize;
+	int arraySize;
 	int* heapArray;
-};
 
+	int getNextEmptyIndex() const;
+};
