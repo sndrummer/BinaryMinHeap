@@ -23,8 +23,7 @@ void testHeap()
 
 int main(int argc, char* argv[])
 {
-	BinaryMinHeap* minHeap = DBG_NEW BinaryMinHeap();
-	delete minHeap;
+	testHeap();
 
 
 	_CrtDumpMemoryLeaks();
