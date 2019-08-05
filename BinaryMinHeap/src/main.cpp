@@ -28,7 +28,7 @@ void testHeap()
 	minHeap->insert(3);
 	minHeap->insert(2);
 	minHeap->insert(1);
-	
+
 
 	std::cout << *minHeap << std::endl;
 	minHeap->deleteMin();
@@ -60,7 +60,6 @@ void testHeap()
 int main(int argc, char* argv[])
 {
 	testHeap();
-
 
 	_CrtDumpMemoryLeaks();
 	return 0;

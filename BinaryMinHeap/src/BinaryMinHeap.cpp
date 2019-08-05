@@ -104,7 +104,6 @@ void BinaryMinHeap::percolateDown()
 	int curIndex = HEAD;
 	while (curIndex < nodeCount)
 	{
-	
 		int parentVal = heapArray[curIndex];
 
 		int smallestChildIndex = getSmallestChildIndex(curIndex);
@@ -112,7 +111,8 @@ void BinaryMinHeap::percolateDown()
 
 		if (smallestChildVal < parentVal)
 		{
-			LOG_DBG("Swapping " + std::to_string(heapArray[curIndex]) + " and " + std::to_string(heapArray[smallestChildIndex]));
+			LOG_DBG("Swapping " + std::to_string(heapArray[curIndex]) + " and " + std::to_string(heapArray[
+smallestChildIndex]));
 			curIndex = swapParentChild(curIndex, smallestChildIndex);
 		}
 		else { return; }
@@ -139,7 +139,7 @@ int BinaryMinHeap::getSmallestChildIndex(int index) const
 	{
 		smallestIndex = rightChildIndex;
 	}
-	
+
 	return smallestIndex;
 }
 
