@@ -35,3 +35,4 @@ void Logger::log_error(const std::string& message)
 {
 	std::cout << "LOGGER ERROR: " << message << std::endl;
 }
+

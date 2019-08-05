@@ -15,9 +15,14 @@ public:
 	static void log_error(const char* message);
 	static void log_error(const std::string& message);
 
+
+	
+
+
+
+
 #ifdef _DEBUG
 #define LOG_DBG(x) (Logger::log_debug(x))
-
 #else
 #define LOG_DBG(x)
 #endif
