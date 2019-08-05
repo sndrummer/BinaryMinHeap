@@ -6,7 +6,6 @@
  * Heap where the parent key is less than or equal to the two child keys are called min - heaps.
  * Binary Heaps are good ways of implementing priority queues
  */
-
 class BinaryMinHeap
 {
 public:
@@ -18,7 +17,7 @@ public:
 	int getRightChildIndex(int nodeIndex) const;
 	int getParent(int nodeIndex) const;
 
-	int insert(int value); //return it's final index
+	int insert(int value); //return the index of the inserted value
 	int deleteMin(); //return the minValue
 
 
