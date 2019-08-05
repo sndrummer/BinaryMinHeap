@@ -19,6 +19,10 @@ void testHeap()
 	BinaryMinHeap* minHeap = DBG_NEW BinaryMinHeap();
 
 	minHeap->insert(5);
+	minHeap->insert(1);
+	minHeap->insert(3);
+	minHeap->insert(7);
+	minHeap->insert(2);
 
 	std::cout << *minHeap << std::endl;
 

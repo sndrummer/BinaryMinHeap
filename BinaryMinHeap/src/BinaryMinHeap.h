@@ -14,11 +14,12 @@ public:
 	BinaryMinHeap(int maxSize);
 	~BinaryMinHeap();
 	int getNodeCount() const;
-	int getLeftChild(int nodeIndex) const;
-	int getRightChild(int nodeIndex) const;
+	int getLeftChildIndex(int nodeIndex) const;
+	int getRightChildIndex(int nodeIndex) const;
 	int getParent(int nodeIndex) const;
 
 	int insert(int value); //return it's final index
+	int deleteMin(); //return the minValue
 
 
 	friend std::ostream& operator<<(std::ostream& os, const BinaryMinHeap& obj);
@@ -31,4 +32,9 @@ private:
 	void initHeap(int maxSize);
 	int getArraySize() const;
 	int getNextEmptyIndex() const;
+	int percolateUp(int index);
+	bool hasParent(int index);
+	int getMin() const;
+	void percolateDown();
+	int swapParentChild(int parentIndex, int childIndex);
 };
