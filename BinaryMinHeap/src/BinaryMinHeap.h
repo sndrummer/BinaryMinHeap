@@ -25,7 +25,8 @@ public:
 	friend std::ostream& operator<<(std::ostream& os, const BinaryMinHeap& obj);
 
 private:
-	int static const DEFAULT_SIZE = 25;
+	int const HEAD = 1;
+	int const DEFAULT_SIZE = 25;
 	int nodeCount = 0;
 	int* heapArray;
 	int arraySize;
@@ -33,8 +34,10 @@ private:
 	int getArraySize() const;
 	int getNextEmptyIndex() const;
 	int percolateUp(int index);
-	bool hasParent(int index);
+	bool hasParent(int index) const;
 	int getMin() const;
 	void percolateDown();
 	int swapParentChild(int parentIndex, int childIndex);
+
+	int getSmallestChildIndex(int index) const;
 };
