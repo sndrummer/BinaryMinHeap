@@ -1,6 +1,12 @@
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
+BinaryMinHeap/.idea/**/workspace.xml
+BinaryMinHeap/.idea/**/tasks.xml
+BinaryMinHeap/.idea/**/usage.statistics.xml
+BinaryMinHeap/.idea/**/dictionaries
+
+
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
